@@ -1,0 +1,622 @@
+{
+	"info": {
+		"_postman_id": "27f1dace-da32-461d-a53b-fa079a256e3a",
+		"name": "Workout2.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "register user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\":{\n        \"email\":\"meatheadmatt@email.com\",\n        \"password\":\"pumpiron\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "user registered response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\":{\n        \"email\":\"meatheadmatt@email.com\",\n        \"password\":\"pumpiron\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "393"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"189-1gWe7K1cTqxq78URrtu5mIKIDvk\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Jan 2022 21:57:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"One of us, one of us...\",\n    \"user\": {\n        \"id\": 7,\n        \"email\": \"meatheadmatt@email.com\",\n        \"password\": \"$2a$13$reQPzc4uaOM.1v8.tZYGiO1PjptXsxAHCTrvDMFaDmYZA8lj1kbze\",\n        \"updatedAt\": \"2022-01-23T21:57:00.310Z\",\n        \"createdAt\": \"2022-01-23T21:57:00.310Z\"\n    },\n    \"sessionToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NywiaWF0IjoxNjQyOTc1MDIwLCJleHAiOjE2NDMwNjE0MjB9.aqvMvtpJD6WCUpvWrgfFELzlUp-dofUrsTOiW4F17F0\"\n}"
+				}
+			]
+		},
+		{
+			"name": "login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\":{\n        \"email\":\"runnerron@email.com\",\n        \"password\":\"marathonmaster\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login successful response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user\":{\n        \"email\":\"runnerron@email.com\",\n        \"password\":\"marathonmaster\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "398"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"18e-8RFbxoEVcIB67ynMbOazJJKgXnc\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Jan 2022 21:54:28 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"id\": 6,\n        \"email\": \"runnerron@email.com\",\n        \"password\": \"$2a$13$rIv/iqfroOnlpj3bUx1IreflV2MXa9ISk5dSj/Bxpg0.q/nFaLIwO\",\n        \"createdAt\": \"2022-01-23T21:42:44.996Z\",\n        \"updatedAt\": \"2022-01-23T21:42:44.996Z\"\n    },\n    \"message\": \"Login successful, welcome back!\",\n    \"sessionToken\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NiwiaWF0IjoxNjQyOTc0ODY4LCJleHAiOjE2NDMwNjQ4Njh9.98qbnKmpe4Vt-tp5MxXARpUOoXKketJpbb0LPxGXqCA\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create log",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiaWF0IjoxNjQyOTc4MTUxLCJleHAiOjE2NDMwNjQ1NTF9.v-0oOdz9Z9iHFj-qnTRYgGWNAdcvTNmFivlm4bn4xgY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"log\":{\n        \"description\":\"squats, lunges, crabwalks\",\n        \"definition\":\"leg day\",\n        \"result\":\"12 reps\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/log/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"log",
+						"create"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "log created response",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6OCwiaWF0IjoxNjQyOTc4MTUxLCJleHAiOjE2NDMwNjQ1NTF9.v-0oOdz9Z9iHFj-qnTRYgGWNAdcvTNmFivlm4bn4xgY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"log\":{\n        \"description\":\"squats, lunges, crabwalks\",\n        \"definition\":\"leg day\",\n        \"result\":\"12 reps\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/log/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"log",
+								"create"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "234"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"ea-eBZxT6fqR1gJ8/b7GQq5DWUXJSM\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 23 Jan 2022 23:19:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Log successfully created\",\n    \"createLog\": {\n        \"id\": 1,\n        \"description\": \"squats, lunges, crabwalks\",\n        \"definition\": \"leg day\",\n        \"result\": \"12 reps\",\n        \"updatedAt\": \"2022-01-23T23:19:06.640Z\",\n        \"createdAt\": \"2022-01-23T23:19:06.640Z\",\n        \"owner\": null\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "User logs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImlhdCI6MTY0Mjk4MjUzMCwiZXhwIjoxNjQzMDY4OTMwfQ.TimC9qvmg8A7PwAMtYeU_0MmTWOujt-4wghE7Sw_xZ0",
+						"description": "flabbytabby",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"log\":{\n        \"description\":\"jumping jacks, kartwheels, running in place\",\n        \"definition\":\"cardio\",\n        \"result\":\"tired\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/log/mine",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"log",
+						"mine"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "user logs response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImlhdCI6MTY0Mjk4MjUzMCwiZXhwIjoxNjQzMDY4OTMwfQ.TimC9qvmg8A7PwAMtYeU_0MmTWOujt-4wghE7Sw_xZ0",
+								"description": "flabbytabby",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"log\":{\n        \"description\":\"jumping jacks, kartwheels, running in place\",\n        \"definition\":\"cardio\",\n        \"result\":\"tired\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/log/mine",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"log",
+								"mine"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "241"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f1-WejaQ0hB2tzWlJmGwROunasLVfU\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 24 Jan 2022 01:03:30 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Here is your logs\",\n    \"userlogs\": [\n        {\n            \"id\": 5,\n            \"description\": \"jumping jacks, kartwheels, running in place\",\n            \"definition\": \"cardio\",\n            \"result\": \"tired\",\n            \"owner\": 10,\n            \"createdAt\": \"2022-01-24T00:58:34.023Z\",\n            \"updatedAt\": \"2022-01-24T00:58:34.023Z\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "Get log by id response",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImlhdCI6MTY0Mjk4MjUzMCwiZXhwIjoxNjQzMDY4OTMwfQ.TimC9qvmg8A7PwAMtYeU_0MmTWOujt-4wghE7Sw_xZ0",
+								"description": "flabbytabby",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"log\":{\n        \"description\":\"pilates, yoga, biking\",\n        \"definition\":\"lean muscle exercises\",\n        \"result\":\"well stretched\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/log/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"log",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "200"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c8-NXTiBBY5xBwSJPMvEpi1An4BjYE\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 24 Jan 2022 02:00:16 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 6,\n        \"description\": \"pilates, yoga, biking\",\n        \"definition\": \"lean muscle exercises\",\n        \"result\": \"well stretched\",\n        \"owner\": 10,\n        \"createdAt\": \"2022-01-24T01:59:47.330Z\",\n        \"updatedAt\": \"2022-01-24T01:59:47.330Z\"\n    }\n]"
+				},
+				{
+					"name": "update entry response",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImlhdCI6MTY0Mjk4MjUzMCwiZXhwIjoxNjQzMDY4OTMwfQ.TimC9qvmg8A7PwAMtYeU_0MmTWOujt-4wghE7Sw_xZ0",
+								"description": "flabbytabby",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"log\":{\n        \"description\":\"ate 25 donuts\",\n        \"definition\":\"regret\",\n        \"result\":\"well stretched\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/log/update/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"log",
+								"update",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"2-vyGp6PvFo4RvsFtPoIWeCReyIC8\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 24 Jan 2022 02:08:41 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{}"
+				},
+				{
+					"name": "delete log response",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImlhdCI6MTY0Mjk4MjUzMCwiZXhwIjoxNjQzMDY4OTMwfQ.TimC9qvmg8A7PwAMtYeU_0MmTWOujt-4wghE7Sw_xZ0",
+								"description": "flabbytabby",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"log\":{\n        \"description\":\"ate 25 donuts\",\n        \"definition\":\"regret\",\n        \"result\":\"well stretched\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/log/delete/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"log",
+								"delete",
+								"6"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "25"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"19-HOrxcsyeFYmW7BgmkyfdKJnv/EY\""
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 24 Jan 2022 02:33:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Log Removed\"\n}"
+				}
+			]
+		}
+	]
+}
